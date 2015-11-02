@@ -39,13 +39,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FootBall.cs" />
-    <Compile Include="ISubject.cs" />
-    <Compile Include="IObserver.cs" />
-    <Compile Include="Player.cs" />
-    <Compile Include="Position.cs" />
+    <Compile Include="Decorator\FieldPlayer.cs" />
+    <Compile Include="Decorator\MidFielder.cs" />
+    <Compile Include="Decorator\Defender.cs" />
+    <Compile Include="Decorator\Forward.cs" />
+    <Compile Include="Decorator\GoalKeeper.cs" />
+    <Compile Include="Decorator\PlayerRole.cs" />
+    <Compile Include="Strategy\AttackStrategy.cs" />
+    <Compile Include="Strategy\DefendStrategy.cs" />
+    <Compile Include="Observer\FootBall.cs" />
+    <Compile Include="interface\ISubject.cs" />
+    <Compile Include="interface\IObserver.cs" />
+    <Compile Include="Observer\Player.cs" />
+    <Compile Include="Observer\Position.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Referee.cs" />
+    <Compile Include="Observer\Referee.cs" />
+    <Compile Include="interface\ITeamStrategy.cs" />
+    <Compile Include="Strategy\Team.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

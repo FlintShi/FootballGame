@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace FootballGame
 {
-    public interface IObserver
+    public interface ITeamStrategy
     {
-        void Update();
+        //AlgorithmInterface : This is the interface provided
+         void Play();
     }
 }
